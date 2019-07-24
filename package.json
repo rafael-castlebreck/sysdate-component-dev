@@ -1,6 +1,6 @@
 {
   "name": "sysdate-component",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "rm -rf build/* && babel src -d build",
+    "prepare": "rm -rf build/* && babel src -d build",
     "dist": "rm -rf build/* && babel src -d build && rm -rf ../sydate-component-dist/build/* && cp -Rv build/* ../sydate-component-dist/build"
   },
   "devDependencies": {
