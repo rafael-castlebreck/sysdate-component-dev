@@ -1,0 +1,21 @@
+{
+  "name": "sysdate-component",
+  "main": "src/index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": ">=16.0.1",
+    "react-dom": ">=16.0.1"
+  },
+  "scripts": {
+    "build": "rm -rf build/* && babel src -d build",
+    "dist": "rm -rf build/* && babel src -d build && rm -rf ../sydate-component-dist/build/* && cp -Rv build/* ../sydate-component-dist/build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
